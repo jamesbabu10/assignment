@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "228aaec7-04d2-4cd9-8701-47874c0274ee",
+		"name": "image processing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20102545"
+	},
+	"item": [
+		{
+			"name": "Upload route",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "Qitl8ROK3/testlatest.csv"
+						}
+					]
+				},
+				"url": "https://assignment-tb7w.onrender.com/api/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "get upload status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://assignment-tb7w.onrender.com/api/image-status/b52a8fb8-7137-4d07-aaf9-599f5025d421"
+			},
+			"response": []
+		}
+	]
+}
