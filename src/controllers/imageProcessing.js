@@ -101,7 +101,7 @@ const imageStatus = async (req, res, next) => {
         .status(200)
         .json(new Success("Request status", { status: "processing" }));
     }
-    if (request.status === "completed") {
+    if (request.status === "PROCESSED") {
       res
         .status(200)
         .json(

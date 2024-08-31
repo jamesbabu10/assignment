@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = 3000;
-const router = express.Router();
 const { errorHandler } = require('./src/error/handler');
 const { connectDb } = require('./src/config/db');
 const { connectToRabbitMQ } = require('./src/config/queue');
